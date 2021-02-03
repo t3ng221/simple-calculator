@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bgApp"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:layout_margin="25dp"
+        android:id="@+id/firstEditTextID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Input 1st Number"
+        android:textSize="35dp"
+        android:gravity="center"
+        android:inputType="number"/>
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="4"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/addButtonID"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+"
+            android:layout_weight="1"
+            android:textSize="38dp"
+            android:onClick="buttonFunction"/>
+        <Button
+            android:id="@+id/subButtonID"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:layout_weight="1"
+            android:textSize="38dp"
+            android:onClick="buttonFunction"/>
+        <Button
+            android:id="@+id/multiButtonID"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="*"
+            android:layout_weight="1"
+            android:textSize="38dp"
+            android:onClick="buttonFunction"/>
+        <Button
+            android:id="@+id/divButtonID"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="/"
+            android:layout_weight="1"
+            android:textSize="38dp"
+            android:onClick="buttonFunction"/>
+
+    </LinearLayout>
+    <EditText
+        android:layout_margin="25dp"
+        android:id="@+id/secondEditTextID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="Input 2nd Number"
+        android:gravity="center"
+        android:textSize="35dp" />
+
+
+
+    <Button
+        android:layout_margin="25dp"
+        android:id="@+id/resultButtonID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="="
+        android:gravity="center"
+        android:textSize="35dp"
+        android:onClick="resultFunction"/>
+
+</LinearLayout>
